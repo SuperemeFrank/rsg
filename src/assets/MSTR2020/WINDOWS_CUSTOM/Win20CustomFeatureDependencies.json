@@ -1,0 +1,611 @@
+[
+    {
+        "id": "1",
+        "name": "MicroStrategy Intelligence",
+        "children": [
+            {
+                "id": "1.1",
+                "name": "MicroStrategy Intelligence Module",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Intelligence is an industrial-strength analytical server optimized for enterprise querying, reporting and OLAP analysis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Intelligence]"]
+            },
+            {
+                "id": "1.2",
+                "name": "Universal Option",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Intelligence is an industrial-strength analytical server optimized for enterprise querying, reporting and OLAP analysis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Intelligence]"]
+            },
+            {
+                "id": "1.3",
+                "name": "MicroStrategy Report Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Report Services, MicroStrategy’s enterprise reporting engine, delivers the full range of report formats including scorecards and dashboards, financial reports, customer invoices and statements, and highly detailed operational reports.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.4",
+                "name": "MicroStrategy OLAP Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy OLAP Services is an extension to MicroStrategy Intelligence that enables MicroStrategy Web and Developer users to perform intuitive OLAP Analysis with Intelligent Cubes.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.5",
+                "name": "MicroStrategy Distribution Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Distribution Services is an extension to MicroStrategy Intelligence that enables high volume, managed report distribution through email, printers, and file systems on a scheduled basis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.6",
+                "name": "MicroStrategy Transaction Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "[MicroStrategy Transaction Services]",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.7",
+                "name": "MicroStrategy MultiSource Option",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Intelligence is an industrial-strength analytical server optimized for enterprise querying, reporting and OLAP analysis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Intelligence]"]
+            },
+            {
+                "id": "1.8",
+                "name": "MicroStrategy Clustering Option",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Intelligence is an industrial-strength analytical server optimized for enterprise querying, reporting and OLAP analysis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Intelligence]"]
+            }
+        ],
+        "dependencies": ["8", "10"],
+        "tooltipProductDescription": "Intelligence is an industrial-strength analytical server optimized for enterprise querying, reporting and OLAP analysis.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Telemetry server]",
+            "[MicroStrategy Command Manager]"
+        ],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "2",
+        "name": "MicroStrategy Web Universal",
+        "children": [
+            {
+                "id": "2.1",
+                "name": "MicroStrategy Web Server (ASP.NET)",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Web Server (ASP .NET) installs all the components required to run MicroStrategy Web in a .NET environment.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "2.2",
+                "name": "MicroStrategy Web Server (JSP)",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Web Server (JSP) installs all the components required to run MicroStrategy Web in a J2EE environment using a Java application server.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "2.3",
+                "name": "MicroStrategy Web Universal Analyst",
+                "children": [],
+                "dependencies": ["2.5"],
+                "tooltipProductDescription": "Web Universal Analyst is a full-featured ad-hoc reporting and OLAP analysis interface.",
+                "tooltipRequireFor": ["[MicroStrategy Web Universal Reporter]"],
+                "tooltipRequiredBy": [
+                    "[MicroStrategy Web Universal Professional]"
+                ]
+            },
+            {
+                "id": "2.4",
+                "name": "MicroStrategy Web Universal Professional",
+                "children": [],
+                "dependencies": ["2.3", "2.5"],
+                "tooltipProductDescription": "Web Universal Professional contains report creation and formatting in addition to ad-hoc reporting and OLAP capabilities.",
+                "tooltipRequireFor": [
+                    "[MicroStrategy Web Universal Analyst]",
+                    "[MicroStrategy Web Universal Reporter]"
+                ],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "2.5",
+                "name": "MicroStrategy Web Universal Reporter",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Web Universal Reporter provides report execution and interactive data analysis, with printing, exporting, and e-mail subscription.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": [
+                    "[MicroStrategy Web Universal Professional]",
+                    "[MicroStrategy Web Universal Analyst]"
+                ]
+            },
+            {
+                "id": "2.6",
+                "name": "MicroStrategy Portlets",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Portlets to plugin MicroStrategy BI content in to various Enterprise Portal Servers.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "2.7",
+                "name": "MicroStrategy GIS Connectors",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy GIS Connectors to plug in various GIS Map vendors to MicroStrategy Web.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Web Universal is a zero-footprint web interface providing query, reporting and analysis through a platform independent architecture.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "3",
+        "name": "MicroStrategy Library",
+        "children": [
+            {
+                "id": "3.1",
+                "name": "MicroStrategy Library Web & Mobile",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Library Web & Mobile (JSP) installs all the components required to run MicroStrategy Web and Mobile in a J2EE environment using a Java application server.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Certificate Store]"]
+            },
+            {
+                "id": "3.2",
+                "name": "MicroStrategy Collaboration",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Collaboration installs all the components required to run collaboration services across all interfaces.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Library is a responsive client interface to access content across Web and Mobile.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": ["[MicroStrategy Certificate Store]"]
+    },
+    {
+        "id": "4",
+        "name": "MicroStrategy Office",
+        "children": [
+            {
+                "id": "4.1",
+                "name": "MicroStrategy Office Client",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Office brings the full power and sophistication of the MicroStrategy linScrollableContainer Industrial-Strength Business Intelligence Platform to the Microsoft® Office Productivity Suite.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "4.2",
+                "name": "MicroStrategy WebServices for Office",
+                "children": [
+                    {
+                        "id": "4.2.1",
+                        "name": "MicroStrategy Web Services (ASP.NET)",
+                        "children": [],
+                        "dependencies": [],
+                        "tooltipProductDescription": ".NET Web Services runs in a Microsoft .NET environment and supports Microsoft Office. Note that if you want to run MicroStrategy Office, you must install MicroStrategy Office on the client.",
+                        "tooltipRequireFor": [],
+                        "tooltipRequiredBy": []
+                    },
+                    {
+                        "id": "4.2.2",
+                        "name": "MicroStrategy Web Services (J2EE)",
+                        "children": [],
+                        "dependencies": [],
+                        "tooltipProductDescription": "Web Services J2EE runs in a J2EE environment and supports Microsoft Office. Note that if you want to run MicroStrategy Office, you must install MicroStrategy Office on the client.",
+                        "tooltipRequireFor": [],
+                        "tooltipRequiredBy": []
+                    }
+                ],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Web Services integrates MicroStrategy Web with the Simple Object Access Protocol (SOAP) and Web Services Description Language (WSDL) internet technologies.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Office brings the full power and sophistication of the MicroStrategy linScrollableContainer Industrial-Strength Business Intelligence Platform to the Microsoft® Office Productivity Suite.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "5",
+        "name": "MicroStrategy Mobile",
+        "children": [
+            {
+                "id": "5.1",
+                "name": "MicroStrategy Mobile Server (ASP.NET)",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Mobile Server (ASP .NET) installs all the components required to run MicroStrategy Mobile in a .NET environment.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "5.2",
+                "name": "MicroStrategy Mobile Server (JSP)",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Mobile Server (JSP) installs all the components required to run MicroStrategy Mobile in a J2EE environment using a Java application server.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Mobile is an interactive user interface for monitoring, reporting, and analysis for mobile devices.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "6",
+        "name": "MicroStrategy Community Data Connectors",
+        "children": [],
+        "dependencies": ["21.3"],
+        "tooltipProductDescription": "A web application containing all the data connectors published on the MicroStrategy Community Connector Gallery. By installing and configuring this component, you can configure and enable any of the connectors for importing data.",
+        "tooltipRequireFor": ["[Apache Tomcat(Other Components)]"],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "7",
+        "name": "MicroStrategy Developer Products",
+        "children": [
+            {
+                "id": "7.1",
+                "name": "MicroStrategy Analyst",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Analyst provides a full range of analytic functionality for reporting, time-series analysis, set analysis, statistical analysis and data mining.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Developer]"]
+            },
+            {
+                "id": "7.2",
+                "name": "MicroStrategy Developer",
+                "children": [],
+                "dependencies": ["7.1"],
+                "tooltipProductDescription": "Developer is a development application used to build business metrics, key performance indicators, reports, scorecards and analyses.",
+                "tooltipRequireFor": ["[MicroStrategy Analyst]"],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "7.3",
+                "name": "MicroStrategy Architect",
+                "children": [
+                    {
+                        "id": "7.3.1",
+                        "name": "MicroStrategy Function Plugin",
+                        "children": [],
+                        "dependencies": [],
+                        "tooltipProductDescription": "The Function Plug-In allows custom developed functions to be included in a MicroStrategy project.",
+                        "tooltipRequireFor": [],
+                        "tooltipRequiredBy": []
+                    }
+                ],
+                "dependencies": [],
+                "tooltipProductDescription": "Architect is a rapid development tool that maps the physical structure of the data warehouse into a logical business model.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "7.4",
+                "name": "MicroStrategy Server Administrator",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Installs the administrative console used to configure and manage users, security and operations of Intelligence.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "The Developer products provide an integrated development, administration and run-time business intelligence environment on the personal computing desktop.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "8",
+        "name": "MicroStrategy Telemetry Server",
+        "children": [],
+        "dependencies": ["10"],
+        "tooltipProductDescription": "MicroStrategy Telemetry Server is a fast, scalable, and durable message broker designed for distributed enterprise deployments.",
+        "tooltipRequireFor": ["[MicroStrategy Command Manager]"],
+        "tooltipRequiredBy": [
+            "[MicroStrategy Intelligence]",
+            "[MicroStrategy Identity]",
+            "[Communicator]"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "MicroStrategy Object Manager",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "Object Manager manages business intelligence applications between development, testing and production systems.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "10",
+        "name": "MicroStrategy Command Manager",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "Command Manager allows the creation and execution of text-based commands from a command line and a graphical interface.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": [
+            "[MicroStrategy Intelligence]",
+            "[MicroStrategy Telemetry Server]",
+            "[MicroStrategy Enterprise Manager]",
+            "[MicroStrategy Identity]",
+            "[Communicator]"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "MicroStrategy Enterprise Manager",
+        "children": [],
+        "dependencies": ["10"],
+        "tooltipProductDescription": "Enterprise Manager is a monitoring tool that provides usage and resource information about the business intelligence environment.",
+        "tooltipRequireFor": ["[MicroStrategy Command Manager]"],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "12",
+        "name": "MicroStrategy Integrity Manager",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "Integrity Manager is a report comparison tool that provides automated information integrity assurance and regression analysis.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "13",
+        "name": "MicroStrategy System Manager",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "System Manager provides the capability to automate manual processes into standardized workflows.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "14",
+        "name": "MicroStrategy Narrowcast Server",
+        "children": [
+            {
+                "id": "14.1",
+                "name": "MicroStrategy Narrowcast Administrator",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Narrowcast Administrator is an interactive and graphical environment used to create information delivery services and administer users and recipients.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": [
+                    "[MicroStrategy Delivery Engine]",
+                    "[MicroStrategy Subscription Portal]",
+                    "[MicroStrategy Tutorial - Delivery]"
+                ]
+            },
+            {
+                "id": "14.2",
+                "name": "MicroStrategy Delivery Engine",
+                "children": [],
+                "dependencies": ["14.1"],
+                "tooltipProductDescription": "Delivery Engine stores information delivery service definitions, executes services, and tracks service execution.",
+                "tooltipRequireFor": ["[MicroStrategy Narrowcast Administrator]"],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "14.3",
+                "name": "MicroStrategy Subscription Portal",
+                "children": [],
+                "dependencies": ["14.1"],
+                "tooltipProductDescription": "Subscription Portal allows end-users to select the content, frequency and delivery mechanism for their personalized on-demand information.",
+                "tooltipRequireFor": ["[MicroStrategy Narrowcast Administrator]"],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "14.4",
+                "name": "MicroStrategy Tutorial - Delivery",
+                "children": [
+                    {
+                        "id": "14.4.1",
+                        "name": "MicroStrategy Tutorial - Delivery Installation",
+                        "children": [],
+                        "dependencies": [],
+                        "tooltipProductDescription": "Installs the Narrowcast Server object and subscription book repositories.",
+                        "tooltipRequireFor": [
+                            "[MicroStrategy Narrowcast Administrator]"
+                        ],
+                        "tooltipRequiredBy": [
+                            "[MicroStrategy Tutorial - Delivery Configuration]"
+                        ]
+                    },
+                    {
+                        "id": "14.4.2",
+                        "name": "MicroStrategy Tutorial - Delivery Configuration",
+                        "children": [],
+                        "dependencies": ["14.4.1"],
+                        "tooltipProductDescription": "Automatically configures the local machine to use the Tutorial object and subscription book repositories. NOTE: Choose this if you want to reconfigure your current MicroStrategy Narrowcast Server configuration.",
+                        "tooltipRequireFor": [
+                            "[MicroStrategy Tutorial - Delivery Installation]"
+                        ],
+                        "tooltipRequiredBy": []
+                    }
+                ],
+                "dependencies": ["14.1"],
+                "tooltipProductDescription": "Installs the Narrowcast Server object and subscription book repositories used by the Tutorial to illustrate information and report delivery.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": ["21.1"],
+        "tooltipProductDescription": "Narrowcast Server is an information delivery server that distributes personalized business information and alerts.",
+        "tooltipRequireFor": ["[SequeLink ODBC Socket Server(Other Components)]"],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "15",
+        "name": "MicroStrategy Certificate Store",
+        "children": [],
+        "dependencies": ["3.1"],
+        "tooltipProductDescription": "Certificate Store tracks missing, current, and pending certificate expirations. Certificate Store presents visual cues about expiring or already expired certificates across the entire MSTR deployment.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Library Web & Mobile(MicroStrategy Library)]"
+        ],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "16",
+        "name": "MicroStrategy Platform Analytics",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Platform Analytics is a tool that collects telemetry (data) from your MicroStrategy environments. It enables smart administration and helps provide a better experience to MicroStrategy users.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "17",
+        "name": "MicroStrategy Analytics Modules",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "Analytics Modules are analytic starter kits designed for rapid deployment and modifiability using the MicroStrategy platform.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "18",
+        "name": "MicroStrategy Export",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Export Engine enables offline sharing of content in familiar formats that can be used interactively (e.g., Excel) or printed.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "19",
+        "name": "MicroStrategy Identity",
+        "children": [
+            {
+                "id": "19.1",
+                "name": "MicroStrategy Identity Server",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Identity Server is a high-performance, highly scalable, highly secure server system that synchronizes identities with enterprise identity management systems of record, and presents those identities to clients.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[Communicator]"]
+            },
+            {
+                "id": "19.2",
+                "name": "MicroStrategy Identity Manager",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Identity Manager is a powerful administrative console that allows enterprises to manage their network of badges, keys, and access to Identity-enabled systems.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[Communicator]"]
+            }
+        ],
+        "dependencies": ["8", "10", "21.3", "21.4"],
+        "tooltipProductDescription": "Identity is an enterprise-grade mobile identity platform designed to provide security for every business process and application across an enterprise. It replaces traditional forms of enterprise identity such as IDs, passwords, and tokens, with mobile identity badges securely delivered on a smartphone.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Telemetry Server]",
+            "[MicroStrategy Command Manager]",
+            "[Apache Tomcat(Other Components)]",
+            "[MySQL(Other Components)]"
+        ],
+        "tooltipRequiredBy": ["Communicator"]
+    },
+    {
+        "id": "20",
+        "name": "Communicator",
+        "children": [],
+        "dependencies": ["8", "10", "21.3", "21.4", "19.1", "19.2"],
+        "tooltipProductDescription": "Communicator allows you to measure the adoption of your corporate systems and network services by your user community. At its core, Communicator is a productivity application that allows you to discover and communicate with Identity Users around you and gain insights into their Identity activities. With Communicator, learn the Who, What, When, and Where of users' interactions with your corporate services.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Telemetry Server]",
+            "[MicroStrategy Command Manager]",
+            "[MicroStrategy Identity]",
+            "[Apache Tomcat(Other Components)]",
+            "[MySQL(Other Components)]"
+        ],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "21",
+        "name": "Other Components",
+        "children": [
+            {
+                "id": "21.1",
+                "name": "SequelLink ODBC Socket Server",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Java Database Connectivity software connects the subscription engine to the object and subscription book repositories.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Narrowcast Server]"]
+            },
+            {
+                "id": "21.2",
+                "name": "MicroStrategy MDX Cube Provider",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "The MicroStrategy MDX Cube Provider is used to access OLAP data sources, such as IBM Cognos® TM1®, Microsoft SQL Server Analysis Services and Oracle Essbase.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "21.3",
+                "name": "Apache Tomcat",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Apache Tomcat is a JSP web server that can be used to host the MicroStrategy Analytics and Usher Security web components.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": [
+                    "[MicroStrategy Community Data Connectors]",
+                    "[MicroStrategy Identity]",
+                    "[Communicator]"
+                ]
+            },
+            {
+                "id": "21.4",
+                "name": "MySQL",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MySQL is a SQL-based utility database server that can be used to host the MicroStrategy Analytics and Usher Security databases.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Identity]", "[Communicator]"]
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Other Components",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    }
+]

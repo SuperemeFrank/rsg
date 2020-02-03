@@ -1,0 +1,40 @@
+{
+    "steps": 0,
+    "deepestStep": 0,
+
+    "expressMode": true,
+    "hideAllDialogs": true,
+    "forceReboot": true,
+    "checkIIS": true,
+    "runConfigWizard": false,
+    "stopAllServices": true,
+    "stopIIS": true,
+    "showWelcomeScreen": false,
+
+    "logFile": "",
+
+    "hideSuiteTargetDialog ": true,
+    "targetDirectory": "C:\\Program Files (x86)\\MicroStrategy",
+
+    "commonFiles": "C:\\Program Files (x86)\\Common Files\\MicroStrategy",
+
+    "hideWelcomeDialog": true,
+    "removeAll": false,
+
+    "hideUserRegistrationDialog": true,
+    "userFirstName": "",
+    "userLastName": "",
+    "userEmail": "",
+    "companyName": "",
+    "licenseKey": "",
+
+    "hideLicenseDetailDialog": true,
+
+    "hideSetupExpressDialog": true,
+
+    "hideOpenSourceSoftwareDialogDialog": true,
+
+    "hideSummaryDialog": true,
+
+    "hideFinishDialog": true
+}

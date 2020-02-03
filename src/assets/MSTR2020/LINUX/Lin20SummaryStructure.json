@@ -1,0 +1,525 @@
+[
+    {
+        "label": "Customer Information",
+        "state": "",
+        "children": [
+            {
+                "label": "User Name:",
+                "state": "userRegistrationUser",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Company Name:",
+                "state": "userRegistrationCompany",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "License Key",
+                "state": "userRegistrationCdKey",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Install Destination",
+        "state": "",
+        "children": [
+            {
+                "label": "Home Directory:",
+                "state": "suiteHomeDirectory",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Install Directory:",
+                "state": "suiteInstallDirectory",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Log Directory:",
+                "state": "suiteLogDirectory",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Selected Components:",
+        "state": "",
+        "children": [
+            {
+                "label": "MicroStrategy Intelligence:",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Distribution Services:",
+                        "state": "distributionServicesActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy OLAP Services:",
+                        "state": "oLAPServicesActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Report Services:",
+                        "state": "reportServicesActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Transaction Services:",
+                        "state": "transactionServicesActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Multisource:",
+                        "state": "intelligenceActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Clustering Feature:",
+                        "state": "intelligenceActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Web Universal",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Web Reporter:",
+                        "state": "webReporterActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Web Analyst:",
+                        "state": "webProfessionalActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Web Professional:",
+                        "state": "webProfessionalActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Web Portlets:",
+                        "state": "portletsActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy GIS Connectors:",
+                        "state": "gISConnectorsActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Library",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Library Web & Mobile:",
+                        "state": "libraryWebMobileActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Collaboration:",
+                        "state": "collaborationActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Mobile",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Mobile Server:",
+                        "state": "mobileServerActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Community Data Connectors:",
+                "state": "communityConnectorsActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Web Services for Office:",
+                "state": "webServicesActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Telemetry Server:",
+                "state": "telemetryServerActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Integrity Manager:",
+                "state": "integrityManagerActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Command Manager:",
+                "state": "commandManagerActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy System Manager:",
+                "state": "systemManagerActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Platform Analytics:",
+                "state": "platformAnalyticsActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Certificate Store:",
+                "state": "certificateStoreActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Enterprise Manager:",
+                "state": "enterpriseManagerActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Export:",
+                "state": "exportActive",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Identity",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Identity Server:",
+                        "state": "identityServerActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Identity Manager:",
+                        "state": "identityManagerActive",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+
+            {
+                "label": "Communicator:",
+                "state": "identityMobileActive",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Identity Server Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Apache Tomacat Directory:",
+                "state": "identityServerTomcatDir",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Server:",
+                "state": "identityServerServerDBHost",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Port:",
+                "state": "identityServerServerDBPort",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "User:",
+                "state": "identityServerServerDBUser",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Password:",
+                "state": "identityServerServerDBPassword",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Server DB Instance:",
+                "state": "identityServerServerDBInstance",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Log DB Instance:",
+                "state": "identityServerServerLogDBInstance",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Identity Server",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Server (one-way) authentication only - port:",
+                        "state": "identityServerServerPortOne",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Client and Server (two-way) authentication port:",
+                        "state": "identityServerServerPortTwo",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "SSL Certificate File (.crt):",
+                        "state": "identityServerServerSslCert",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Private Key File (.key):",
+                        "state": "identityServerServerSslKey",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "SSL Certificate Chain File (.pem):",
+                        "state": "identityServerServerCaCert",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Identity Gateway",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Server (one-way) authentication only - port:",
+                        "state": "identityServerGatewayPort",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "SSL Certificate File (.crt):",
+                        "state": "identityServerGatewaySslCert",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Private Key File (.key):",
+                        "state": "identityServerGatewaySslKey",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "SSL Certificate Chain File (.pem):",
+                        "state": "identityServerGatewayCaCert",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["identityServerActive"]
+    },
+    {
+        "label": "Identity Manager Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Apache HTTP Server Settings",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Directory:",
+                        "state": "identityManagerApacheDir",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "User:",
+                        "state": "identityManagerApacheUser",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "User Group:",
+                        "state": "identityManagerApacheGroup",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Database Connection",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Server:",
+                        "state": "identityManagerDBHost",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Port:",
+                        "state": "identityManagerDBPort",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "User:",
+                        "state": "identityManagerDBUser",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Password:",
+                        "state": "identityManagerDBPassword",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "DB Instance:",
+                        "state": "identityManagerDBInstance",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["identityManagerActive"]
+    },
+    {
+        "label": "Telemetry Server Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Cluster Enabled for three or more Telemetry Servers:",
+                "state": "telemetryServerClusterEnable",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Local Telemetry Server:",
+                "state": "telemetryServerClusterLocalnode",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Cluster Servers:",
+                "state": "telemetryServerClusterRemotenodes",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["telemetryServerActive"]
+    },
+    {
+        "label": "Topology Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Machine Environment:",
+                "state": "servicesRegistrationMachineEnvironment",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Cluster Servers:",
+                "state": "servicesRegistrationServerHosts",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": [
+            "libraryWebMobileActive",
+            "collaborationActive",
+            "communityConnectorsActive",
+            "telemetryServerActive",
+            "mobileServerActive"
+        ]
+    },
+    {
+        "label": "Registering as a Service",
+        "state": "",
+        "children": [
+            {
+                "label": "Register MicroStrategy processes as a service so that processes automatically start after system startup:",
+                "state": "registerServices",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "User Name:",
+                "state": "registerServicesUser",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "User Group:",
+                "state": "registerServicesGroup",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": [
+            "libraryWebMobileActive",
+            "collaborationActive",
+            "communityConnectorsActive",
+            "telemetryServerActive",
+            "mobileServerActive",
+            "exportActive"
+        ]
+    }
+]

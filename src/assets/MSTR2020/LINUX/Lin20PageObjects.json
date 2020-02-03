@@ -1,0 +1,620 @@
+[
+    {
+        "id": 0,
+        "name": "customerInfo&InstallDir",
+        "sidebarLabel": "Customer Information & Installation Directory",
+        "dependOnState": [],
+        "referPic": [
+            "assets/MSTR2020/LINUX/pics/1 Customer Information.png",
+            "assets/MSTR2020/LINUX/pics/2 Install Location.png"
+        ],
+        "formSections": {
+            "customerInfos": [
+                {
+                    "label": "User Name",
+                    "fieldName": "userRegistrationUser",
+                    "state": "userRegistrationUser",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid User Name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Company Name",
+                    "fieldName": "userRegistrationCompany",
+                    "state": "userRegistrationCompany",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid Company Name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "License Key",
+                    "fieldName": "userRegistrationCdKey",
+                    "state": "userRegistrationCdKey",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid License Key!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": true
+                }
+            ],
+            "installDir": [
+                {
+                    "label": "Home Directory",
+                    "fieldName": "suiteHomeDirectory",
+                    "state": "suiteHomeDirectory",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an absolute Home Directory path!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Install Directory",
+                    "fieldName": "suiteInstallDirectory",
+                    "state": "suiteInstallDirectory",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an absolute Install Directory path!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "sideEffects": [
+                        {"state": "webUniversalDeployDirectory",
+                        "addValue": "/WebUniversal"},
+                        {"state": "portletsInstallDirectory",
+                        "addValue": "/Portlets"},
+                        {"state": "gISConnectorsInstallDirectory",
+                        "addValue": "/GISConnectors"},
+                        {"state": "communityConnectorsInstallDirectory",
+                        "addValue": "/CommunityConnectors"},
+                        {"state": "webServicesInstallDirectory",
+                        "addValue": "/WebServicesJ2EE"},
+                        {"state": "mobileServerInstallDirectory",
+                        "addValue": "/MobileServer"},
+                        {"state": "commandManagerInstallDirectory",
+                        "addValue": "/CommandManager"},
+                        {"state": "systemManagerInstallDirectory",
+                        "addValue": "/SystemManager"},
+                        {"state": "platformAnalyticsInstallDirectory",
+                        "addValue": "/PlatformAnalytics"},
+                        {"state": "identityServerInstallDirectory",
+                        "addValue": "/UsherServer"},
+                        {"state": "identityManagerInstallDirectory",
+                        "addValue": "/UsherNetworkMgr"},
+                        {"state": "identityMobileInstallDirectory",
+                        "addValue": "/UsherMobile"}
+
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Log Directory",
+                    "fieldName": "suiteLogDirectory",
+                    "state": "suiteLogDirectory",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an absolute Log Directory path!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                }
+            ]
+        }
+    },
+    {
+        "id": 1,
+        "name": "featureSelection",
+        "sidebarLabel": "Select Features",
+        "dependOnState": [],
+        "referPic": ["assets/MSTR2020/LINUX/pics/3 Select Components.png"],
+        "formSections": {}
+    },
+    {
+        "id": 2,
+        "name": "identityServerConfig1",
+        "sidebarLabel": "Identity Server Configuration Step 1",
+        "dependOnState": ["identityServerActive"],
+        "referPic": ["assets/MSTR2020/LINUX/pics/4 Identity Server 1.png"],
+        "formSections": {
+            "apacheTomcatDir": [
+                {
+                    "label": "Apache Tomcat Directory",
+                    "fieldName": "identityServerTomcatDir",
+                    "state": "identityServerTomcatDir",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an absolute Apache Tomcat Directory path!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                }
+            ],
+            "databaseConnection": [
+                {
+                    "label": "Server",
+                    "fieldName": "identityServerServerDBHost",
+                    "state": "identityServerServerDBHost",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid Server domain name or IP address!",
+                            "whitespace": true,
+                            "pattern": "^((\\*)|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|((\\*\\.)?([a-zA-Z0-9-]+\\.){0,5}[a-zA-Z0-9-][a-zA-Z0-9-]+\\.[a-zA-Z]{2,63}?))$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Port",
+                    "fieldName": "identityServerServerDBPort",
+                    "state": "identityServerServerDBPort",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid Server Port!",
+                            "whitespace": true,
+                            "pattern": "^([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "User",
+                    "fieldName": "identityServerServerDBUser",
+                    "state": "identityServerServerDBUser",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid User Name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Password",
+                    "fieldName": "identityServerServerDBPassword",
+                    "state": "identityServerServerDBPassword",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid Password!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": true
+                },
+                {
+                    "label": "Server DB Instance",
+                    "fieldName": "identityServerServerDBInstance",
+                    "state": "identityServerServerDBInstance",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input Server DB instance name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Log DB Instance",
+                    "fieldName": "identityServerServerLogDBInstance",
+                    "state": "identityServerServerLogDBInstance",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input Log DB instance name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                }
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "identityServerConfig2",
+        "sidebarLabel": "Identity Server Configuration Step 2",
+        "dependOnState": ["identityServerActive"],
+        "referPic": ["assets/MSTR2020/LINUX/pics/5 Identity Server 2.png"],
+        "formSections": {
+            "sslCertificate": [
+                {
+                    "label": "Server (one-way SSL) authentication only - Port:",
+                    "fieldName": "identityServerServerPortOne",
+                    "state": "identityServerServerPortOne",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid server port!",
+                            "whitespace": true,
+                            "pattern": "^([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Client and Server (two-way SSl) mutual authentication - Port:",
+                    "fieldName": "identityServerServerPortTwo",
+                    "state": "identityServerServerPortTwo",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid server port!",
+                            "whitespace": true,
+                            "pattern": "^([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "SSL Certificate file (.crt):",
+                    "fieldName": "identityServerServerSslCert",
+                    "state": "identityServerServerSslCert",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input the absolute path of the file!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Private key file (.key):",
+                    "fieldName": "identityServerServerSslKey",
+                    "state": "identityServerServerSslKey",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input the absolute path of the file!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "SSL Certificate Chain file (.pem):",
+                    "fieldName": "identityServerServerCaCert",
+                    "state": "identityServerServerCaCert",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input the absolute path of the file!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "identityServerConfig3",
+        "sidebarLabel": "Identity Server Configuration Step 3",
+        "dependOnState": ["identityServerActive"],
+        "referPic": ["assets/MSTR2020/LINUX/pics/6 Identity Server 3.png"],
+        "formSections": {
+            "gatewayPort": [
+                {
+                    "label": "Agent Gateway (one-way SSL) authentication only - Port:",
+                    "fieldName": "identityServerGatewayPort",
+                    "state": "identityServerGatewayPort",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid server port!",
+                            "whitespace": true,
+                            "pattern": "^([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$"
+                        }
+                    ],
+                    "passwd": false
+                }
+            ],
+            "gatewayCertificate": [
+                {
+                    "label": "SSL Certificate file (.crt):",
+                    "fieldName": "identityServerGatewaySslCert",
+                    "state": "identityServerGatewaySslCert",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input the absolute path of the file!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Private key file (.key):",
+                    "fieldName": "identityServerGatewaySslKey",
+                    "state": "identityServerGatewaySslKey",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input the absolute path of the file!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "SSL Certificate Chain file (.pem):",
+                    "fieldName": "identityServerGatewayCaCert",
+                    "state": "identityServerGatewayCaCert",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input the absolute path of the file!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                }
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "identityManagerConfig",
+        "sidebarLabel": "Identity Manager Configuration",
+        "dependOnState": ["identityManagerActive"],
+        "referPic": [
+            "assets/MSTR2020/LINUX/pics/7 Identity Server Manager.png"
+        ],
+        "formSections": {
+            "apacheHttpServer": [
+                {
+                    "label": "Directory:",
+                    "fieldName": "identityManagerApacheDir",
+                    "state": "identityManagerApacheDir",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid absolute path!",
+                            "whitespace": true,
+                            "pattern": "^(/[^/ ]*)+/?$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "User:",
+                    "fieldName": "identityManagerApacheUser",
+                    "state": "identityManagerApacheUser",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an User Name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "User Group:",
+                    "fieldName": "identityManagerApacheGroup",
+                    "state": "identityManagerApacheGroup",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an Apache Group!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                }
+            ],
+            "databaseConnection": [
+                {
+                    "label": "Server",
+                    "fieldName": "identityManagerDBHost",
+                    "state": "identityManagerDBHost",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid Domain Name or IP Address!",
+                            "whitespace": true,
+                            "pattern": "^((\\*)|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|((\\*\\.)?([a-zA-Z0-9-]+\\.){0,5}[a-zA-Z0-9-][a-zA-Z0-9-]+\\.[a-zA-Z]{2,63}?))$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Port",
+                    "fieldName": "identityManagerDBPort",
+                    "state": "identityManagerDBPort",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a valid Server Port!",
+                            "whitespace": true,
+                            "pattern": "^([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$"
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "User",
+                    "fieldName": "identityManagerDBUser",
+                    "state": "identityManagerDBUser",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a User Name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "Password",
+                    "fieldName": "identityManagerDBPassword",
+                    "state": "identityManagerDBPassword",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a Password!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": true
+                }
+            ],
+            "dbInstance": [
+                {
+                    "label": "DB Instance:",
+                    "fieldName": "identityManagerDBInstance",
+                    "state": "identityManagerDBInstance",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a Database Instance!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                }
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "name": "telemetryServerConfig",
+        "sidebarLabel": "Telemetry Server Configuration",
+        "dependOnState": ["telemetryServerActive"],
+        "referPic": ["assets/MSTR2020/LINUX/pics/8 Telemetry Server.png"],
+        "formSections": {
+            "localNode": [
+                {
+                    "label": "Enter the Fully Qualified Domain Name of the local Telemetry Server",
+                    "fieldName": "telemetryServerClusterLocalnode",
+                    "state": "telemetryServerClusterLocalnode",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input a Local Telemetry Domain Name or IP address!",
+                            "whitespace": true,
+                            "pattern": "^((\\*)|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)|((\\*\\.)?([a-zA-Z0-9-]+\\.){0,5}[a-zA-Z0-9-][a-zA-Z0-9-]+\\.[a-zA-Z]{2,63}?))$"
+                        }
+                    ],
+                    "passwd": false
+                }
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "name": "topologyConfig",
+        "sidebarLabel": "Topology Configuration",
+        "dependOnState": [
+            "libraryWebMobileActive",
+            "collaborationActive",
+            "communityConnectorsActive",
+            "telemetryServerActive",
+            "mobileServerActive"
+        ],
+        "referPic": ["assets/MSTR2020/LINUX/pics/9 Topology Configure.png"],
+        "formSections": {}
+    },
+    {
+        "id": 8,
+        "name": "registerAsService",
+        "sidebarLabel": "Registering As a Service",
+        "dependOnState": [
+            "libraryWebMobileActive",
+            "collaborationActive",
+            "communityConnectorsActive",
+            "telemetryServerActive",
+            "mobileServerActive",
+            "exportActive"
+        ],
+        "referPic": ["assets/MSTR2020/LINUX/pics/10 register as a service.png"],
+        "formSections": {
+            "registerService": [
+                {
+                    "label": "User Name:",
+                    "fieldName": "registerServicesUser",
+                    "state": "registerServicesUser",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an User Name!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                },
+                {
+                    "label": "User Group:",
+                    "fieldName": "registerServicesGroup",
+                    "state": "registerServicesGroup",
+                    "rules": [
+                        {
+                            "required": true,
+                            "message": "Please input an User Group!",
+                            "whitespace": true,
+                            "pattern": ""
+                        }
+                    ],
+                    "passwd": false
+                }
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "name": "summary",
+        "sidebarLabel": "Summary",
+        "dependOnState": [],
+        "referPic": [],
+        "formSections": {}
+    }
+]

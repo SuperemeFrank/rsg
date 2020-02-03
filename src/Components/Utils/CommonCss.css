@@ -1,0 +1,348 @@
+body {overflow-y: scroll;}
+
+
+.ant-checkbox-wrapper {
+    margin-top: 12px;
+}
+.ant-checkbox {
+    margin-right: 4px;
+}
+
+.ant-form-item-label {
+    line-height: 20px;
+    word-wrap: break-all;
+	word-break: normal;
+    table-layout: fixed;
+}
+
+.ant-form-item {
+    width: 100%;
+    height: 5%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    word-wrap: break-all;
+	word-break: normal;
+    table-layout: fixed;
+    
+}
+
+.ant-alert {
+    margin-top: 12px;
+}
+
+.ant-btn-dashed:focus {
+        color:#1890ff;
+    background-color: #fff;
+    border-color:#1890ff;
+}
+
+.info-icon {
+    height: 12px;
+    width: 12px;
+    margin-right:5px;
+    margin-bottom: 2px;
+}
+
+.info-tag {
+    line-height: 12px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+
+
+h2 {
+    line-height: 1;
+}
+
+
+/* button */
+.buttonBar {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top-style: solid;
+    border-top-color: #e2e2e2;
+    border-top-width: 1px;
+    z-index: 100;
+    box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, 0.20);
+}
+
+.buttons {
+    position: fixed;
+    margin-top: 12px;
+    right: 28px
+}
+
+.buttonBack {
+    height: 36px;
+}
+
+.buttonNext {
+    margin-left: 20px;
+    height: 36px;
+}
+
+/* Scroll Container */
+.featureScrollableContainer {
+    background-color: white;
+    height: 60vh;
+    overflow-y: scroll;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding: 20px
+}
+
+.featureScrollableContainerError {
+    border-color: #f5222d;
+}
+
+.featureScrollableContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.featureScrollableContainer::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.featureScrollableContainer::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.summaryContainer {
+    background-color: white;
+    height: 75vh;
+    overflow-y: scroll;
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+}
+
+.summaryContainer li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.summaryContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.summaryContainer::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+
+.summaryContainer::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.ant-tree-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+
+
+.selectBtnBar {
+    height: 44px;
+    padding-top: 8px;
+    padding-right: 8px;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* for error message */
+.btnBarErrorMsg {
+    display: inline;
+    color: #f5222d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.selectBtnBarError {
+    height: 44px;
+    padding-top: 8px;
+    padding-right: 8px;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    border-color: #f5222d;
+}
+
+.selectBarButtons {
+    display: inline;
+    float: right;
+}
+
+
+
+.description img {
+    height: 24px;
+    margin-left: 8px;
+}
+
+.description {
+    position: fixed;
+    bottom: 18px;
+    left: 28px;
+}
+
+/* form */
+.form {
+    background-color: white;
+    height: 100%;
+}
+
+.colContent,
+.colPics {
+    height: 100%;
+    padding-bottom: 90px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 32px
+}
+
+.colNav {
+    background-color: #F8F8F8;
+    padding-bottom: 90px;
+    min-height: 100vh;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 32px
+}
+
+.inputBox {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+/* font */
+.headlineTop {
+    color: #35383A 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+.headlineSub {
+    color: #35383A 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-top: 36px;
+}
+
+/* divider */
+.divider {
+    margin-top: 7vh;
+    height: 80vh
+}
+
+
+/* navigation cols height settings */
+.winCustomerNavHeight {
+    height: 800px;
+
+}
+
+.winFeatureSelectNavHeight {
+    height: 800px;
+}
+
+.winTopoNavHeight {
+    height: 700px;
+}
+
+.winIdentityNavHeight {
+    height: 1250px;
+}
+
+.winTeleNavHeight {
+    height: 700px;
+}
+
+.winWebMobileNavHeight {
+    height: 700px;
+}
+
+.winPortalMDXNavHeight {
+    height: 700px;
+}
+
+.winOfficeNavHeight {
+    height: 700px;
+}
+
+.winIntelligNavHeight {
+    height: 700px;
+}
+
+.winNarrowcastNavHeight {
+    height: 700px;
+}
+
+.winSummaryNavHeight {
+    height: 800px;
+}
+
+.LinCustomerNavHeight {
+    height: 800px;
+}
+
+.linFeatureNavHeight {
+    height: 700px;
+}
+
+.linIdentity1NavHeight {
+    height: 900px;
+}
+
+.linIdentity2NavHeight {
+    height: 700px;
+}
+
+.linIdentity3NavHeight {
+    height: 700px;
+}
+
+
+.linIdentityManagerNavHeight1 {
+    height: 1050px;
+}
+
+.linIdentityManagerNavHeight2 {
+    height: 700px;
+}
+
+.linTeleNavHeight {
+    height: 700px;
+}
+
+.linTopoNavHeight {
+    height: 700px;
+}
+
+.linRegServiceNavHeight {
+    height: 700px;
+}
+
+.linSummaryNavHeight {
+    height: 700px;
+}

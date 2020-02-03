@@ -1,0 +1,41 @@
+
+
+.licenseContainer {
+  background-color: white;
+  height: 55vh;
+  padding:20px;
+  overflow-y: scroll;
+  border: 1px solid #e2e2e2;
+  
+}
+
+.licenseContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.licenseContainer::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+
+.licenseContainer::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.licensePage{
+  padding: 2%;
+}
+
+.inputBoxesContainer {
+  margin-top: 36px
+}
+
+.licenseModeSelector {
+  margin-bottom: 60px;
+}
+
+.licenseVersionBotMargin {
+  margin-bottom: 60px;
+}

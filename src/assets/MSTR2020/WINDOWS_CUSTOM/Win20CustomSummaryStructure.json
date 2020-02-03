@@ -1,0 +1,746 @@
+[
+    {
+        "label": "Customer Information",
+        "state": "",
+        "children": [
+            {
+                "label": "First Name:",
+                "state": "userFirstName",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Last Name:",
+                "state": "userLastName",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "E-mail:",
+                "state": "userEmail",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Company Name:",
+                "state": "companyName",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "License Key:",
+                "state": "licenseKey",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Installation Directory",
+        "state": "",
+        "children": [
+            {
+                "label": "MicroStrategy Installation Directory:",
+                "state": "targetDirectory",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Common File Installation Directory",
+                "state": "commonFiles",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Selected Features",
+        "state": "",
+        "children": [
+            {
+                "label": "MicroStrategy Intelligence",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Intelligence Module:",
+                        "state": "intelligenceSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Universal Option:",
+                        "state": "intelligenceSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Reporter Services:",
+                        "state": "intelligenceReportServicesSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy OLAP Services:",
+                        "state": "intelligenceOLAPServicesSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Distributions Services:",
+                        "state": "intelligenceDistributionServicesSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Transaction Services:",
+                        "state": "intelligenceTransactionServicesSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy MultiSource Option:",
+                        "state": "intelligenceSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Clustering Option:",
+                        "state": "intelligenceSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Web Universal",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Web Server (ASP.NET):",
+                        "state": "webServerASPNETSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Web Server (JSP):",
+                        "state": "webServerJSPSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Web Universal Analyst:",
+                        "state": "webAnalystSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Web Universal Professional:",
+                        "state": "webProfessionalSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Web Universal Reporter:",
+                        "state": "webReporterSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Portlets:",
+                        "state": "portletsSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy GIS Connectors:",
+                        "state": "gisConnectorsSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Library",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Library Web & Mobile:",
+                        "state": "libraryWebMobileSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Collaboration:",
+                        "state": "collaborationSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Office",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Office Client:",
+                        "state": "officeSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy WebServices for Office",
+                        "state": "",
+                        "children": [
+                            {
+                                "label": "MicroStrategy Web Services (ASP.NET):",
+                                "state": "webServicesASPNETSelect",
+                                "children": [],
+                                "visibleDependStates": []
+                            },
+                            {
+                                "label": "MicroStrategy Web Services (J2EE):",
+                                "state": "webServicesJSPSelect",
+                                "children": [],
+                                "visibleDependStates": []
+                            }
+                        ],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Mobile",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Mobile Server (ASP.NET):",
+                        "state": "mobileServerASPSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Mobile Server (JSP):",
+                        "state": "mobileServerJSPSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Community Data Connectors:",
+                "state": "communityConnectorsSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Developer Products",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Analyst:",
+                        "state": "analystSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Developer:",
+                        "state": "developerSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Architect",
+                        "state": "",
+                        "children": [
+                            {
+                                "label": "MicroStrategy Function Plugin:",
+                                "state": "functionPluginSelect",
+                                "children": [],
+                                "visibleDependStates": []
+                            }
+                        ],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Server Administration:",
+                        "state": "serverAdminSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Telemetry Server:",
+                "state": "telemetryServerSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Object Manager:",
+                "state": "objectManagerSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Command Manager:",
+                "state": "commandManagerSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Enterprise Manager:",
+                "state": "enterpriseManagerSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Integrity Manager:",
+                "state": "integrityManagerSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy System Manager:",
+                "state": "systemManagerSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Narrowcast Server",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Narrowcast Administrator:",
+                        "state": "ncsAdminSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Delivery Engine:",
+                        "state": "deliveryEngineSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Subscription Portal:",
+                        "state": "subscriptionPortalSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Tutorial - Delivery",
+                        "state": "",
+                        "children": [
+                            {
+                                "label": "MicroStrategy Tutorial - Delivery Installation:",
+                                "state": "tutorialDeliveryInstallSelect",
+                                "children": [],
+                                "visibleDependStates": []
+                            },
+                            {
+                                "label": "MicroStrategy Tutorial - Delivery Configuration:",
+                                "state": "tutorialDeliveryConfigureSelect",
+                                "children": [],
+                                "visibleDependStates": []
+                            }
+                        ],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Certificate Store:",
+                "state": "certificateStoreSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Platform Analytics:",
+                "state": "platformAnalyticsSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Analytics Modules:",
+                "state": "analyticsModulesSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Export:",
+                "state": "exportSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Identity",
+                "state": "",
+                "children": [
+                    {
+                        "label": "MicroStrategy Identity Server:",
+                        "state": "identityServerSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy Identity Manager:",
+                        "state": "identityManagerSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Communicator:",
+                "state": "usherProfessionalSelect",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Other Components",
+                "state": "",
+                "children": [
+                    {
+                        "label": "SequelLink ODBC Socket Server:",
+                        "state": "sequeLinkSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MicroStrategy MDX Cube Provider: (*not available in response file)",
+                        "state": "",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Apache Tomcat:",
+                        "state": "tomcatSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "MySQL:",
+                        "state": "mySQLSelect",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Topology Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Multiple Machine Environment:",
+                "state": "multipleMachineEnvironment",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Multi-Env Topology Servers:",
+                "state": "serversInCluster",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": [
+            "libraryWebMobileSelect",
+            "communityConnectorsSelect",
+            "collaborationSelect",
+            "telemetryServerSelect",
+            "mobileSelect",
+            "mySQLSelect",
+            "tomcatSelect"
+        ]
+    },
+    {
+        "label": "Identity Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "SSL Certificate",
+                "state": "",
+                "children": [
+                    {
+                        "label": "CA Certificate Chain:",
+                        "state": "caCertificateChain",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "SSL Server Certificate:",
+                        "state": "serverCertificate",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "SSL Certificate Key:",
+                        "state": "serverCertificateKey",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "[Optional] SSL Certificate Key Password File:",
+                        "state": "serverCertificateKeyPasswordFile",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Email (SMTP Server)",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Server:",
+                        "state": "smtpServer",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Port:",
+                        "state": "smtpServerPort",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Use SSL:",
+                        "state": "smtpUseSSL",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "SSL Configure",
+                        "state": "",
+                        "children": [
+                            {
+                                "label": "User Name:",
+                                "state": "smtpUser",
+                                "children": [],
+                                "visibleDependStates": []
+                            },
+                            {
+                                "label": "Password:",
+                                "state": "smtpUserPassword",
+                                "children": [],
+                                "visibleDependStates": []
+                            },
+                            {
+                                "label": "Email Sender Address:",
+                                "state": "smtpEmail",
+                                "children": [],
+                                "visibleDependStates": []
+                            }
+                        ],
+                        "visibleDependStates": ["smtpUseSSL"]
+                    }
+                ],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Fully Qualified Domain Name:",
+                "state": "fqdn",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["identityServerSelect"]
+    },
+    {
+        "label": "Telemetry Server Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Cluster Enabled for three or more Telemetry Servers:",
+                "state": "telemetryServerCluster",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Cluster Configuration",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Local Telemetry Server:",
+                        "state": "telemetryServerLocalNode",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Remote Telemetry Servers:",
+                        "state": "telemetryServerRemoteNodes",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["telemetryServerSelect"]
+    },
+    {
+        "label": "Virtual Directory Name Settings",
+        "state": "",
+        "children": [
+            {
+                "label": "MicroStrategy Web Server (ASP .NET) Virtual Directory Name:",
+                "state": "webVirtualDirectory",
+                "children": [],
+                "visibleDependStates": ["webServerASPNETSelect"]
+            },
+            {
+                "label": "MicroStrategy Mobile Server (ASP .NET) Virtual Directory Name:",
+                "state": "mobileVirtualDirectory",
+                "children": [],
+                "visibleDependStates": ["mobileServerASPSelect"]
+            },
+            {
+                "label": "MicroStrategy Subscription Portal Virtual Directory Name:",
+                "state": "portalVirtualDirectory",
+                "children": [],
+                "visibleDependStates": ["subscriptionPortalSelect"]
+            },
+            {
+                "label": "MicroStrategy MDX Cube Provider Virtual Directory Name:",
+                "state": "mdxVirtualDirectory",
+                "children": [],
+                "visibleDependStates": ["mdxCubeProviderSelect"]
+            }
+        ],
+        "visibleDependStates": [
+            "webServerASPNETSelect",
+            "mobileServerASPSelect",
+            "subscriptionPortalSelect",
+            "mdxCubeProviderSelect"
+        ]
+    },
+    {
+        "label": "Office Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "MicroStrategy Web Services URL:",
+                "state": "officeURL",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroSoft Excel:",
+                "state": "configureExcel",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroSoft PowerPoint:",
+                "state": "configurePowerPoint",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroSoft Word:",
+                "state": "configureWord",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["officeSelect"]
+    },
+    {
+        "label": "Intelligence Server Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Do not use the Intelligence service account (Default as System account):",
+                "state": "isSkipAccountSetting",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Intelligence Service Account",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Login:",
+                        "state": "isLogin",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Domain:",
+                        "state": "isDomain",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Password:",
+                        "state": "isPassword",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["intelligenceSelect"]
+    },
+    {
+        "label": "Narrowcast Server Configuration",
+        "state": "",
+        "children": [
+            {
+                "label": "Do not set the Narrowcast service account (Default as System account):",
+                "state": "nsSkipAccountSetting",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Narrowcast Server Account",
+                "state": "",
+                "children": [
+                    {
+                        "label": "Login:",
+                        "state": "nsLogin",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Domain:",
+                        "state": "nsDomain",
+                        "children": [],
+                        "visibleDependStates": []
+                    },
+                    {
+                        "label": "Password:",
+                        "state": "nsPassword",
+                        "children": [],
+                        "visibleDependStates": []
+                    }
+                ],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": ["deliveryEngineSelect"]
+    },
+
+    {
+        "label": "Automatically restart this computer if needed during installation",
+        "state": "forceReboot",
+        "children": [],
+        "visibleDependStates": []
+    }
+]

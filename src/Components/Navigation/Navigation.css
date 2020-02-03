@@ -1,0 +1,13 @@
+.ant-steps-item-wait {
+    margin-top: 10px;
+}
+
+
+/* auto hidden when more than 2 lines only for Chrome and Safari */
+.ant-steps-item-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

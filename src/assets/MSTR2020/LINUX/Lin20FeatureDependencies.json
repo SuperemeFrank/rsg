@@ -1,0 +1,335 @@
+[
+    {
+        "id": "1",
+        "name": "MicroStrategy Intelligence",
+        "children": [
+            {
+                "id": "1.1",
+                "name": "MicroStrategy Distribution Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Distribution Services is an extension to MicroStrategy Intelligence that enables high volume, managed report distribution through email, printers, and file systems on a scheduled basis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.2",
+                "name": "MicroStrategy OLAP Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy OLAP Services is an extension to MicroStrategy Intelligence that enables MicroStrategy Web and Developer users to perform intuitive OLAP analysis with Intelligent Cubes.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.3",
+                "name": "MicroStrategy Report Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Report Services, MicroStrategy's enterprise reporting engine, delivers the full range of report formats including scorecards and dashboards, financial reports, customer invoices and statements, and highly detailed operational reports.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.4",
+                "name": "MicroStrategy Transaction Services",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Transaction Services",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "1.5",
+                "name": "MultiSource",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Intelligence is an industrial-strength analytical server that is optimized for enterprise querying, reporting, and OLAP analysis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": [
+                    "[MicroStrategy Intelligence]"
+                ]
+            },
+            {
+                "id": "1.6",
+                "name": "Clustering Feature",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Intelligence is an industrial-strength analytical server that is optimized for enterprise querying, reporting, and OLAP analysis.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": [
+                    "[MicroStrategy Intelligence]"
+                ]
+            }
+        ],
+        "dependencies": ["7", "9"],
+        "tooltipProductDescription": "Intelligence is an industrial-strength analytical server that is optimized for enterprise querying, reporting, and OLAP analysis.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Telemetry server]",
+            "[MicroStrategy Command Manager]"
+        ],
+        "tooltipRequiredBy": ["[MicroStrategy Telemetry server]",
+                              "[MicroStrategy Command Manager]"]
+    },
+    {
+        "id": "2",
+        "name": "MicroStrategy Web Universal",
+        "children": [
+            {
+                "id": "2.1",
+                "name": "MicroStrategy Web Reporter",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Web Universal Reporter provides report execution and interactive data analysis, with printing, exporting, and e-mail subscription.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": [
+                    "[MicroStrategy Web Analyst]",
+                    "[MicroStrategy Web Professional]"
+                ]
+            },
+            {
+                "id": "2.2",
+                "name": "MicroStrategy Web Analyst",
+                "children": [],
+                "dependencies": ["2.1"],
+                "tooltipProductDescription": "Web Universal Analyst is a full-featured ad-hoc reporting and OLAP analysis interface.",
+                "tooltipRequireFor": ["[MicroStrategy Web Reporter]"],
+                "tooltipRequiredBy": ["[MicroStrategy Web Professional]"]
+            },
+            {
+                "id": "2.3",
+                "name": "MicroStrategy Web Professional",
+                "children": [],
+                "dependencies": ["2.2", "2.1"],
+                "tooltipProductDescription": "Web Universal Professional contains report creation and formatting in addition to ad-hoc reporting and OLAP capabilities.",
+                "tooltipRequireFor": [
+                    "[MicroStrategy Web Reporter]",
+                    "[MicroStrategy Web Analyst]"
+                ],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "2.4",
+                "name": "MicroStrategy Web Portlets",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Portlets to plugin MicroStrategy BI content in to various Enterprise Portal Servers.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            },
+            {
+                "id": "2.5",
+                "name": "MicroStrategy GIS Connectors",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy GIS Connectors to plug in various GIS Map vendors to MicroStrategy Web.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Web Universal is a zero-footprint web interface providing query, reporting and analysis through a platform independent architecture.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "3",
+        "name": "MicroStrategy Library",
+        "children": [
+            {
+                "id": "3.1",
+                "name": "MicroStrategy Library Web & Mobile",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Library Web & Mobile installs all the components required to run MicroStrategy Web and MicroStrategy Mobile in a J2EE environment using a Java application server.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[MicroStrategy Certificate Store]"]
+            },
+            {
+                "id": "3.2",
+                "name": "MicroStrategy Collaboration",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Collaboration installs all the components required to run collaboration services across all interfaces.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Library is a responsive client interface for accessing content across MicroStrategy Web and MicroStrategy Mobile.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": ["[MicroStrategy Certificate Store]"]
+    },
+    {
+        "id": "4",
+        "name": "MicroStrategy Mobile",
+        "children": [
+            {
+                "id": "4.1",
+                "name": "MicroStrategy Mobile Server",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "Mobile Server",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": []
+            }
+        ],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Mobile is an interactive user interface for monitoring, reporting, and analysis for mobile devices.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "5",
+        "name": "MicroStrategy Community Data Connectors",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "A web application containing all the data connectors published on the MicroStrategy Community Connector Gallery. By installing and configuring this component, you can configure and enable any of the connectors for importing data.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "6",
+        "name": "MicroStrategy Web Services for office",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "MicroStrategy Web Services integrates MicroStrategy Web with the Simple Object Access Protocol (SOAP) and Web Services Description Language (WSDL) Internet technologies.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "7",
+        "name": "MicroStrategy Telemetry Server",
+        "children": [],
+        "dependencies": ["9"],
+        "tooltipProductDescription": "MicroStrategy Telemetry Server is a fast, scalable, and durable message broker designed for distributed enterprise deployments.",
+        "tooltipRequireFor": ["[MicroStrategy Command Manager]"],
+        "tooltipRequiredBy": [
+            "[MicroStrategy Intelligence]",
+            "[MicroStrategy Web Universal]",
+            "[MicroStrategy Platform Analytics]",
+            "[MicroStrategy Identity]",
+            "[Communicator]"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "MicroStrategy Integrity Manager",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "Integrity Manager is a report comparison tool that provides automated information integrity assurance and regression analysis.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "9",
+        "name": "MicroStrategy Command Manager",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "Command Manager allows the creation and execution of text-based commands from a command line and a graphical interface.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": [
+            "[MicroStrategy Intelligence]",
+            "[MicroStrategy Web Universal]",
+            "[MicroStrategy Telemetry server]",
+            "[MicroStrategy Platform Analytics]",
+            "[MicroStrategy Enterprise Manager]",
+            "[MicroStrategy Identity]",
+            "[Communicator]"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "MicroStrategy System Manager",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "System Manager provides the capability to automate manual processes into standardized workflows.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "11",
+        "name": "MicroStrategy Platform Analytics",
+        "children": [],
+        "dependencies": ["7", "9"],
+        "tooltipProductDescription": "Platform Analytics is a next-generation telemetry tool that lets you analyze usage and performance data from your MicroStrategy environments.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Telemetry server]",
+            "[MicroStrategy Command Manager]"
+        ],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "12",
+        "name": "MicroStrategy Certificate Store",
+        "children": [],
+        "dependencies": ["3.1"],
+        "tooltipProductDescription": "Certificate Store tracks missing and current certificates, and pending certificate expirations. It presents visual cues about expiring or already expired certificates across the entire MicroStrategy deployment.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Library Web & Mobile(MicroStrategy Library)]"
+        ],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "13",
+        "name": "MicroStrategy Enterprise Manager",
+        "children": [],
+        "dependencies": ["9"],
+        "tooltipProductDescription": "Enterprise Manager is a monitoring tool that provides usage and resource information about the business intelligence environment.",
+        "tooltipRequireFor": ["[MicroStrategy Command Manager]"],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "14",
+        "name": "Export",
+        "children": [],
+        "dependencies": [],
+        "tooltipProductDescription": "Export Engine enables offline sharing of content in familiar formats that can be used interactively (e.g., Excel) or printed.",
+        "tooltipRequireFor": [],
+        "tooltipRequiredBy": []
+    },
+    {
+        "id": "15",
+        "name": "MicroStrategy Identity",
+        "children": [
+            {
+                "id": "15.1",
+                "name": "MicroStrategy Identity Server",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Identity Server is a high-performance, highly scalable, highly secure server system that synchronizes identities with enterprise identity management systems of record, and presents those identities to clients.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[Communicator]"]
+            },
+            {
+                "id": "15.2",
+                "name": "MicroStrategy Identity Manager",
+                "children": [],
+                "dependencies": [],
+                "tooltipProductDescription": "MicroStrategy Identity Manager is a powerful administrative console that allows enterprises to manage their network of badges, keys, and access to Identity-enabled systems.",
+                "tooltipRequireFor": [],
+                "tooltipRequiredBy": ["[Communicator]"]
+            }
+        ],
+        "dependencies": ["7", "9"],
+        "tooltipProductDescription": "Identity is an enterprise-grade mobile identity platform designed to provide security for every business process and application across an enterprise. It replaces traditional forms of enterprise identity such as IDs, passwords, and tokens, with mobile identity badges securely delivered on a smartphone.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Telemetry server]",
+            "[MicroStrategy Command Manager]"
+        ],
+        "tooltipRequiredBy": ["[Communicator]"]
+    },
+    {
+        "id": "16",
+        "name": "Communicator",
+        "children": [],
+        "dependencies": ["7", "9", "15.1", "15.2"],
+        "tooltipProductDescription": "Communicator allows you to measure the adoption of your corporate systems and network services by your user community. At its core, Communicator is a productivity application that allows you to discover and communicate with Identity users around you and gain insights into their Identity activities. With Communicator, you can learn the Who, What, When, and Where of users' interactions with your corporate services.",
+        "tooltipRequireFor": [
+            "[MicroStrategy Telemetry server]",
+            "[MicroStrategy Identity]",
+            "[MicroStrategy Command Manager]"
+        ],
+        "tooltipRequiredBy": []
+    }
+]

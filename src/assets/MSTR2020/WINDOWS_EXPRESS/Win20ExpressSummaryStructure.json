@@ -1,0 +1,64 @@
+[
+    {
+        "label": "Customer Information",
+        "state": "",
+        "children": [
+            {
+                "label": "First Name:",
+                "state": "userFirstName",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Last Name:",
+                "state": "userLastName",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "E-mail:",
+                "state": "userEmail",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "Company Name:",
+                "state": "companyName",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "License Key:",
+                "state": "licenseKey",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Installation Directory",
+        "state": "",
+        "children": [
+            {
+                "label": "MicroStrategy Installation Directory:",
+                "state": "targetDirectory",
+                "children": [],
+                "visibleDependStates": []
+            },
+            {
+                "label": "MicroStrategy Common File Installation Directory",
+                "state": "commonFiles",
+                "children": [],
+                "visibleDependStates": []
+            }
+        ],
+        "visibleDependStates": []
+    },
+    {
+        "label": "Automatically restart this computer if needed during installation",
+        "state": "forceReboot",
+        "children": [],
+        "visibleDependStates": []
+    }
+]
