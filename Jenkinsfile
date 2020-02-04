@@ -38,7 +38,7 @@ pipeline {
 
       stage('Deploy on production server') {
         input {
-          message: 'Confirm to deploy it to production server?'
+          message 'Confirm to deploy it to production server?'
         }
 
         steps {
